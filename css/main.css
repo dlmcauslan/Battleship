@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: #00394d;
+}
+
+h1 {
+    color: #00394d;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 56px;
+    text-align: center;
+}
+
+header {
+    background: deepskyblue;
+    padding: 10px;
+}
+
+.grid {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 60vh;
+    height: 80vw;
+    max-height: 60vh;
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.row {
+    display: flex;
+}
+.box {
+    background: deepskyblue;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.empty{
+    opacity: 0;
+}
+
+.toprow {
+    background: #0086b3;
+}
+
+.leftcol {
+    background: #0086b3;
+}
+
+.box:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+.box .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
